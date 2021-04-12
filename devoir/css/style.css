@@ -1,0 +1,80 @@
+/********** Base styles **********/
+
+*
+{
+    box-sizing: border-box;
+}
+section
+{  
+    color: wheat;
+    background-color: orangered;
+    border: 2px solid wheat;
+    margin: 10px;
+    position: relative;
+    height: 150px;
+}
+
+section div.title
+{
+    font-size: 1.1em;
+    border: solid wheat;
+    border-right: 2px;
+    border-top: 2px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 3px 20px;
+}
+
+section div.description
+{
+    position: absolute;
+    top: 20%;
+    padding: 5%;
+}
+
+.col-ld-4 , .col-md-6
+{
+    float: left;
+    width: 100%;
+}
+
+#checken
+{
+    background-color: darkgreen;
+}
+
+#beef
+{
+    background-color: darkcyan;
+}
+
+#sushi
+{
+    background-color: darkblue;
+}
+
+/* Simple responsive framework */
+.row
+{
+    width: 100%;
+    text-align: center;
+}
+
+/********** Large devices **********/
+@media(min-width:992px)
+{
+    .col-ld-4
+    { 
+        width: 33%;
+    }
+}
+
+/********** Medium divices **********/
+@media(min-width:768px) and (max-width:991px)
+{
+    .col-md-6
+    {
+        width: 50%;
+    }
+}
